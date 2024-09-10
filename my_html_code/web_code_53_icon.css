@@ -1,0 +1,26 @@
+.icon{
+    text-align: center;
+}
+
+.fa-solid.fa-house{
+    color: gray;
+}
+
+.fa-brands.fa-instagram
+{
+    color: rgb(163, 12, 100);
+}
+
+.fa-brands.fa-twitter
+{
+    color: rgb(51, 201, 251);
+}
+
+.fa-brands.fa-twitch
+{
+    color: rgb(139, 68, 139);
+}
+
+.icon a{
+    text-decoration: none;
+}

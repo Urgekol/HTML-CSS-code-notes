@@ -1,0 +1,111 @@
+body{
+
+    
+    font-size: 200%;
+
+    margin: 20px;
+
+    background-color: white;
+    
+}
+
+#page{
+
+    min-width: 1500px;
+    max-width: 1830px;
+
+    padding: 20px;                    /*padding for div tag*/
+
+    border: 5px dashed black;       /*for double border*/
+    background-color: rgb(237, 236, 236);
+}
+
+#navigation{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    width: 60%;
+
+    padding-left: 50px;
+    margin: 0px auto 0px auto;
+
+    text-align: center;
+}
+
+li{
+    display: inline;
+    margin: 0px 3px;
+    list-style-type: none;
+}
+
+#para{  
+
+    font-size: 80%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    width: 45%;
+
+    margin:20px auto 20px auto;
+    font-weight: normal;
+}
+
+a{
+    margin: auto 20px;
+    text-transform: uppercase;
+
+    color: black;
+
+    text-decoration: underline;
+}
+
+a:hover{
+    color: red;
+}
+
+#img1{
+
+    position: absolute;
+
+
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+    border-right: 3px solid;
+
+    float: right;
+    margin-right: 10px;
+}
+
+p{   
+    text-align: center;
+
+    margin-left: 140px
+}
+
+hr{
+    border: 1px solid;
+}
+
+#end{
+
+    padding: 0px;
+    margin: 0px;
+
+}
+
+div.image{
+
+    position: relative;
+
+    top: -20px;
+    left: 89%;
+}
+
+d{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    width: 60%;
+
+    padding-left: 0px;
+    margin: 0px auto 0px auto;
+}

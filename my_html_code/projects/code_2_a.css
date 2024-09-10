@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar{
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+
+    background-color: black;
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+nav ul li
+{
+    float: left;
+    width: 20%;
+    font-size: 20px;
+}
+
+.navbar ul li a
+{
+    color:white;
+    text-decoration: none;
+    line-height: 50px;
+    height: auto;
+    display: block;
+}
+
+.navbar ul li a:hover
+{
+    background-color:aqua;
+    color: black;
+}
+
+.navbar ul li ul li {
+    background-color: black;
+    display: none;
+}
+
+.navbar ul li:hover ul li{
+    width: auto;
+    float: none;
+    display: block;
+}

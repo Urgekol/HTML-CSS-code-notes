@@ -1,0 +1,37 @@
+<html>
+
+    <head>
+
+        <title>
+            Title
+        </title>
+
+        <link rel="stylesheet" href="web_code_37_combinators.css">
+    </head>
+
+    <body>
+        <!-- combinators = explains the relationship
+                           between listed selectors
+             (space)          = descendants
+                            > = grand
+                            ~ = all siblings
+                            + = very next sibling
+        -->
+
+
+        <div id="container">
+
+            <p>This is #1</p>   <!--child-->
+            <p>This is #1</p>   <!--child-->
+            
+            <div>
+                <p>This is #3</p>   <!--grand child-->
+            </div>
+        </div>
+
+        <p>This is #4</p>   <!--siblings of container-->
+        <p>This is #5</p>   <!--siblings of container-->
+
+    </body>
+
+</html>

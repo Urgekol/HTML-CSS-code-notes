@@ -1,0 +1,48 @@
+.dropdown{
+    display: inline-block;  /*
+                                without this, the button was 
+                                hovered even in the right side 
+                                of it
+                            */
+}
+
+.dropdown button{
+    background: black;
+    font-size: 30;
+    color: green;
+
+    border-radius: 15px;
+    padding: 10px 15px;
+
+    cursor: grabbing;
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+
+    text-decoration: none;
+    padding: 10px 15px;
+}
+ 
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover button{
+    border-radius: 15px;
+    border-color: red;
+    background: white;
+}
+
+.dropdown a:hover{
+    border-radius: 15px;
+    background: green;
+}

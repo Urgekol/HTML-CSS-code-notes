@@ -1,0 +1,18 @@
+body{
+    color: rgb(212, 227, 237, 0.932);
+
+    background-image:url(background.jpg);
+    background-position: center;
+
+    background-attachment: fixed;   /*fixed position*/
+
+    /*
+        usually the image will repeat
+        so......
+    */
+    background-repeat:no-repeat;
+
+    background-size: cover;     /*cover = will cover the entire page*/
+
+    /*any size we want. ex: 300px*/
+}

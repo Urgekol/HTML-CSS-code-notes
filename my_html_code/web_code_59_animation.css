@@ -1,0 +1,113 @@
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+
+    font-size:13em;
+    text-align: center;
+    position: relative;
+
+    animation-name: slideLeft;
+    animation-duration: 4s;
+
+    animation-iteration-count: 2;   /*no. of times*/
+                                    /* can be infinite */
+
+    animation-delay: 2s;    /*2s stop before animation
+                                can be a -ve value
+                                = starts before 2s*/
+
+    /*
+        animation-direction: reverse;
+        animation-direction: alternate; - first normal then reverse
+    */
+}
+
+
+/*
+    @keyframes anyName {....}
+*/
+
+@keyframes colorChange1 {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+
+@keyframes colorChange2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}    /*at 25% interval of 4s*/
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+@keyframes changeMove {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+@keyframes slideLeft {
+    /*go*/
+    to{
+        transform: translateX(1000px)
+    }
+}
+
+@keyframes slideRight 
+{
+    /*come*/
+    from{
+        transform: translateX(1000px)
+    }    
+}
+
+@keyframes slideDown
+{
+    /*come*/
+    to{
+        transform: translateX(1000px)
+    }    
+}
+
+@keyframes rotate
+{
+    /*come*/
+    from{
+        transform: translateX(1000px)
+    }    
+}
+
+@keyframes grow
+{
+    /*come*/
+    from{
+        transform: translateX(1000px)
+    }    
+}
+@keyframes shrink
+{
+    /*come*/
+    from{
+        transform: translateX(1000px)
+    }    
+}
+@keyframes fade
+{
+    /*come*/
+    from{
+        transform: translateX(1000px)
+    }    
+}
+@keyframes glow
+{
+    /*come*/
+    from{
+        transform: translateX(1000px)
+    }    
+}

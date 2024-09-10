@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+
+h1{
+    font-family: "Courier New", "Courier";
+
+    color: white;
+}
+
+#p1
+{
+    color: red;
+}
+
+#p2{
+    color:rgb(69, 151, 149);
+}
+
+#p3{
+    color: #0000ff;
+}
+
+#p4{
+    color: hsl(333, 79%, 54%);
+}

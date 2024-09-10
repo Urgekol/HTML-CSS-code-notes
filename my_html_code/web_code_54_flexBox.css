@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+
+    /*
+        used for the "div" tag only
+
+        flex-direction: row-reverse;
+            - this is to reverse the boxes horizontally
+
+        flex-direction: column-reverse;
+            - this is to reverse the boxes vertically
+    */
+
+
+    justify-content: space-between;
+    /*
+        move horizontally
+            flex-start;     flex-end;       space-between;
+                                            space-evenly;
+                                            space-around;
+    */
+}
+
+.box{
+    width:150px;
+    height: 150px; 
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: red;
+}
+
+#box2{
+    background-color: yellow;
+}
+
+#box3{
+    background-color: lightgreen;
+}
+
+#box4{
+    background-color: aqua;
+}

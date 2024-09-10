@@ -1,0 +1,49 @@
+.a{
+    width: 150px;
+    height: 80px;
+    background-color: gray;
+    transform: rotate(20deg);
+}
+  
+.b{
+    width: 150px;
+    height: 80px;
+    background-color: gray;
+    transform: skewX(20deg);
+  }
+  
+.c{
+    width: 150px;
+    height: 80px;
+    background-color: gray;
+    transform: scaleX(1.5);
+}
+  
+.d{
+    width: 150px;
+    height: 80px;
+    background-color: gray;
+    transform: skewY(20deg);
+  }
+  
+.e{
+    width: 150px;
+    height: 80px;
+    background-color: gray;
+    transform: scaleY(1.5);
+}
+
+.f{
+    width: 150px;
+    height: 80px;
+    background-color: gray;
+    transform: skew(20deg, 30deg);
+}
+
+.g{
+    width: 150px;
+    height: 80px;
+    background-color: aqua;
+    transform: translateX(100%) rotateZ(20deg) scale(0.5);
+}
+

@@ -1,0 +1,23 @@
+/*
+    overflow = property sets the desired behavior 
+               when content does not fit in the 
+               parent element box (or overflows)
+
+
+    types of overflow
+            overflow: visible       - no change
+            overflow: hidden        - hides
+            overflow: clip          - lets the user to overflow the content
+                                                   as per their requirement
+            overflow: scroll        - can be scrolled
+            overflow: auto          - if scroll bar needed it will give scroll
+                                      else remains same
+*/
+
+
+div{
+    border: 2px solid;
+    height: 75px;
+    overflow: clip;
+    overflow-clip-margin: 3px;
+}

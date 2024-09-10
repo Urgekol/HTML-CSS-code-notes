@@ -1,0 +1,14 @@
+@font-face {
+    src: url(fonts/Pacifico-Regular.ttf);
+    font-family: pacific;
+}
+
+
+h1{
+    font-family: "pacific";
+}
+
+#p1
+{
+    font-family: "pacific";
+}

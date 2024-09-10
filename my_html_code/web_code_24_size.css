@@ -1,0 +1,41 @@
+body{
+    background-color: gray;
+}
+
+h1{
+    font-family: "Courier New", "Courier";
+    /*
+        first font is the one in need
+            if somehow the first font fails to display
+                          second font is in the rescue
+    */
+
+    color: white;
+}
+
+#p1
+{
+    font-size: 1.5em;   
+    /*
+        em is the standard measuring unit
+            1em = 100%      i.e. original size
+            1.5em = 150%
+    */
+}
+
+#p2{
+    font-size: 20px;
+    /*
+        another size measuring unit
+    */
+}
+
+#p3{
+    font-weight: 70px;
+    /*  
+        weight = is for the boldness 
+            we call also write font-weight:bold
+    */
+
+    font-style: italic;
+}

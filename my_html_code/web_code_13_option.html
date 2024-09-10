@@ -1,0 +1,27 @@
+<html>
+
+    <title>
+        Title
+    </title>
+
+    <body>
+        <form action="">
+            Enter the card:
+            <!--must use the "name" attribute-->
+            <select name="card type">
+                <option value="visa">visa</option>
+                <option value="rupay">rupay</option>
+                <option value="mastercard">mastercard</option>
+            </select>
+
+            <br><br>
+
+            Enter the CVV: <br>
+            <input type="password" pattern="[0-9]{3}">
+            <small>3 digits</small>
+        
+            <input type="submit" value="Enter">
+        </form>
+    </body>
+
+</html>

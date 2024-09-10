@@ -1,0 +1,34 @@
+/*
+
+*{
+    box-sizing: border-box;
+}
+
+    this will be applicable to all elements
+    this is a good practice
+
+*/
+
+
+.box{
+    background-color: white;
+    border: 3px solid;
+    padding: 25px;      /* space from the border
+                               or other elements   */
+
+    height: auto;           /*height of the box without text*/
+    width: 50%;
+    box-sizing: border-box;
+    
+    float: right;
+    text-align: center;
+
+    max-height:40%;        /*height of the box with text*/
+
+    /*or, max-height, max-width, min-height */
+}
+
+.container{
+    background-color: gray;
+    height: 100%;
+}

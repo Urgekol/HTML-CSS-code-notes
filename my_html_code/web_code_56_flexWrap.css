@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+
+    border: 10px solid black;
+    height: 90vh;
+
+    flex-wrap: wrap;
+    /*
+        nowrap;     wrap-reverse;
+    */
+
+    align-content: flex-start;    
+    /* remove the space */
+}
+
+.box{
+    width:150px;
+    height: 150px; 
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: red;
+}
+
+#box2{
+    /*
+        align-self: center;
+            = all the options from align-item
+                which helps to change the positioning
+                of the box2 only
+        */
+    background-color: yellow;
+}
+
+#box3{
+    background-color: lightgreen;
+    /*
+        order: -1   that is from the beginning
+        order: 1    that is from the end
+      */
+}
+
+#box4{
+    background-color: aqua;
+}

@@ -1,0 +1,23 @@
+div{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /*covering the full width but for us it is not*/
+    
+    display: block;     /*start from new line*/
+}
+
+span{
+    background-color:aqua;
+    width: 100px;
+    height: 100px;
+    display: inline;
+
+    /*
+    or,
+        display: inline-block;      - display one line as inline and then act 
+                                      as a block to display rest
+
+                                      does't start from new line
+    */
+}

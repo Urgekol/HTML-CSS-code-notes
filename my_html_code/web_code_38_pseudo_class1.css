@@ -1,0 +1,27 @@
+div{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+a:link{                 /*color of the link*/
+    color: aqua ;
+}
+
+a:hover{
+    color: blue;
+    font-size: 30px;
+}
+
+a:active{               /*click and hold*/
+    color: red;
+    font-size: 12px;
+}
+
+a:visited{
+    color:green
+}
+
+a:focus{                /*selected one (temporary)*/
+    color: black;
+}

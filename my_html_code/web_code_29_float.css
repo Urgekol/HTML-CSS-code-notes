@@ -1,0 +1,14 @@
+div{
+    border: 2px solid red;
+    display: float-root;
+}
+
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+
+#img2{
+    float: right;
+    margin-left: 10px;
+}

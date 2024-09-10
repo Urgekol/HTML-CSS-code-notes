@@ -1,0 +1,37 @@
+<html>
+        <head><meta charset="utf-8"></head><head><title>
+        Title
+    </title>
+
+    </head><body>
+
+        <!-- The action defines the site where the information 
+                                                    need to go -->
+        <form action="action_page.php" method="post">
+                    <!--types of method: 
+                        GET = used to append non-secure information, 
+                        POST = used to append password or secure information -->
+
+
+            <label for="fname">first name</label>
+            <input type="text" id="fname" name="fname" placeholder="John" required="">
+            <br>
+
+            <label for="lname">last name </label>
+            <input type="text" id="lname" name="lname" placeholder="Doe" required="">
+            <br>
+
+            <!-- for = attribute used same as "id"
+                        but used only in labels -->
+
+            <label for="quantity">quantity</label>
+            <input type="number" id="quantity=" name="quantity" min="0" max="99" value="1">
+                <!--value = attribute used to set the default value like here 1-->
+
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+
+    
+
+</body></html>

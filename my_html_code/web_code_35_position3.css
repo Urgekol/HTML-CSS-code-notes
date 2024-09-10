@@ -1,0 +1,32 @@
+#box1{
+    width: 200px;
+    height: 200px;
+
+    background-color: aqua;
+    position: fixed;
+
+    top: 100px;
+    left: 100px;
+
+    /*as we move the outer box the inner box will 
+    also move*/
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+
+    background-color: red;
+    position: absolute;
+
+    top: 50px;
+    left: 50px;
+
+    /*being absolute, the inner can get outside*/
+}
+
+/*
+    static - does not allow to move the box \
+                even if we mentioned a position
+                like top: 50px;         etc.
+*/

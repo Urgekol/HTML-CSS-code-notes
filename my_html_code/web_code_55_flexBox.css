@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+
+    /*
+        used for the "div" tag only
+
+        flex-direction: row-reverse;
+            - this is to reverse the boxes horizontally
+
+        flex-direction: column-reverse;
+            - this is to reverse the boxes vertically
+    */
+
+    border: 10px solid black;
+    height: 90vh;
+    align-items: center;    /*according to border size*/
+    /*
+        move vertically
+            flex-start;     flex-end;
+            
+            baseline;   - always align the text with the base
+                          even if the font size is different 
+                                    
+    */
+}
+
+.box{
+    width:150px;
+    height: 150px; 
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: red;
+}
+
+#box2{
+    background-color: yellow;
+}
+
+#box3{
+    background-color: lightgreen;
+}
+
+#box4{
+    background-color: aqua;
+}

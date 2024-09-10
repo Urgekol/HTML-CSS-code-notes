@@ -1,0 +1,48 @@
+/*
+    Attribute selector: applicable on all
+                        attributes - class, id, name, value
+*/
+
+
+/* existence = targets any <p> with an attribute
+               called class                             */
+p[class]{
+    color: red;
+}
+
+
+/* equality = targets any <p> with an attribute "id"
+              and whose value is puppy                  */
+p[id="puppy"]
+{
+    color: blue;
+}
+
+/* space = targets any <p> with an attribute "id" 
+           whose value is a list of space-separated 
+           words, one of which is cat                   */
+p[id~="cat"]
+{
+    color: aqua;
+}
+
+/* prefix = targets any <p> with an attribute "id"
+            whose value begins with the letter "f"      */
+p[id^="f"]
+{
+    color: yellow;
+}
+
+/* substring = targets any <p> with an attribute "id"
+               whose value contains the letter "rr"     */
+p[id*="rr"]
+{
+    color: orange;
+}
+
+/* suffix = targets any <p> with an attribute "id"
+            whose value ends with the letter "d"        */
+p[id$="d"]
+{
+    color: purple;
+}

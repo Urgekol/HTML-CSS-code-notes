@@ -1,0 +1,33 @@
+#h1 {
+    text-decoration: overline;
+}
+
+#h2 {
+    text-decoration: line-through;
+}
+
+#h3 {
+    text-decoration: underline;
+}
+
+#h4 {
+    text-decoration: underline overline;
+}
+
+#h5 {
+    text-decoration: underline overline line-through;
+}
+
+#h6 {
+    text-decoration: none;
+}
+
+#h7 {
+    text-decoration: overline;
+    text-decoration-color: aqua;
+
+    text-decoration-style: wavy;
+    /* can be:
+        solid , wavy , double
+    */
+}

@@ -1,0 +1,57 @@
+body{
+    margin: 0px; 
+}
+
+header{
+    background-color: rgb(166, 165, 165);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar{
+    background-color: rgb(47, 47, 47);
+    height: 50px;
+}
+
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+                            /*aside + section + article*/
+article{                    /*          =100%          */
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+*{
+    box-sizing: border-box;     /*with all the padding and size*/
+}                               /*this will give fit all of them*/
+
+
+footer{
+    display: block;
+    clear: both;        /*this will clear the float used*/
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+}
+
+/*
+    this is for the mobile devices
+
+    all the aside, section, and article
+    be displaying downwards not sideways
+*/
+@media screen and (max-width:600px){    
+    aside, section, article{
+        width: 100%;
+    }
+}

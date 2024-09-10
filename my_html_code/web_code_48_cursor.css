@@ -1,0 +1,100 @@
+.auto {
+    cursor: auto;
+}
+
+.cell {
+    cursor: cell;
+}
+
+.col-resize {
+    cursor: col-resize;
+}
+
+.row-resize {
+    cursor: row-resize;
+}
+
+.context-menu {
+    cursor: context-menu;
+}
+
+.copy {
+    cursor: copy;
+}
+
+.crosshair {
+    cursor: crosshair;
+}
+
+.default {
+    cursor: default;
+}
+
+.grab {
+    cursor: -webkit-grab; 
+    cursor: grab;
+}
+
+.grabbing {
+    cursor: -webkit-grabbing; 
+    cursor: grabbing;
+}
+
+.help {
+    cursor: help;
+}
+
+.move {
+    cursor: move;
+}
+
+.ns-resize {
+    cursor: ns-resize;
+}
+
+.ne-resize {
+    cursor: ne-resize;
+}
+
+.nw-resize {
+    cursor: nw-resize;
+}
+.w-resize {         /*or, .e-resize*/
+    cursor: w-resize;
+}
+
+.none {
+    cursor: none;
+}
+
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.progress {
+    cursor: progress;
+}
+
+.text {
+    cursor: text;
+}
+
+.url {
+    cursor: url(myBall.cur),auto;
+}
+
+.wait {
+    cursor: wait;
+}
+
+.zoom-in {
+    cursor: zoom-in;
+}
+
+.zoom-out 
+{
+    cursor: zoom-out;
+}

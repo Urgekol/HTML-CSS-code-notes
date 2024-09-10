@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.navbar ul{
+    text-align: center;
+
+    list-style-type: none;  /*no bullets*/
+    background-color: rgb(115, 102, 102);
+    margin: 0px;
+
+    overflow: auto;
+
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;  /*remove underline of the links*/
+    padding: 15px;
+    display: inline-block;
+}
+
+.navbar a:hover{
+    background-color: grey;
+}
+
+.navbar li{
+    float: left;
+}

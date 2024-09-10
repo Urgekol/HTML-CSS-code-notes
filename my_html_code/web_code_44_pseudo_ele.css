@@ -1,0 +1,41 @@
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+
+p::first-line{
+    background-color:yellow;
+}
+
+p::selection{
+    color: green;
+    background-color:black;
+}
+
+#fruit li::before{
+    content:"😂";
+
+    /*  "windows + ;" for emoji  */
+}
+
+#apple::after{
+    content:"🍎";
+}
+
+#mango::after{
+    content:"🥭";
+}
+
+#banana::after{
+    content:"🍌";
+}
+
+#fruit li::marker{
+    content:"✔";
+
+    /* bullet marker of the list
+                         is gone */
+
+    color: lightgreen;
+    font-size: 1.2em;
+}
