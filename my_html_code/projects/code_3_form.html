@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <style>
+        .container 
+        {
+                display: block;
+                margin-bottom: 8px;
+        }
+        #add 
+        {
+                width: 250px;
+                padding: 8px;
+                box-sizing: border-box;
+        }
+    </style>
+    <script>
+        function isAlphabetic(char) 
+        {
+                return char >= 'A' && char <= 'Z' || char >= 'a' && char <= 'z';
+        }
+
+        function isNumeric(str) 
+        {
+            for (let i = 0; i < str.length; i++) 
+            {
+                if (str[i] < '0' || str[i] > '9') 
+                {
+                        return false;
+                }
+            }
+            return true;
+        }
+
+        function validate() 
+        {
+            var uname = document.getElementById("uname").value.trim();
+            var zip = document.getElementById("zip").value.trim();
+            var email = document.getElementById("email").value.trim();
+
+            // Username validation
+            if (uname.length === 0) 
+            {
+                alert("Username cannot be empty");
+                return false;
+            }
+            for (let i = 0; i < uname.length; i++) 
+            {
+                if (!isAlphabetic(uname[i])) 
+            {
+                        alert("Invalid Username: Only alphabetic characters are allowed");
+                        return false;
+                }
+            }
+
+            // ZIP code validation
+            if (zip.length !== 6 || !isNumeric(zip)) 
+            {
+                alert("Invalid ZIP code: Must be 6 digits");
+                return false;
+            }
+
+            // Email validation
+            var atIndex = email.indexOf('@');
+            var dotIndex = email.indexOf('.', atIndex);
+
+            if (atIndex === -1 || dotIndex === -1 || atIndex === 0 || dotIndex === atIndex + 1 || dotIndex === email.length - 1) 
+            {
+                alert("Invalid email address");
+                return false;
+            }
+
+            var localPart = email.substring(0, atIndex);
+            var domainPart = email.substring(atIndex + 1, dotIndex);
+            var tldPart = email.substring(dotIndex + 1);
+
+            if (localPart.length === 0 || domainPart.length === 0 || tldPart.length < 2) 
+            {
+                alert("Invalid email address");
+                return false;
+            }
+
+            for (let i = 0; i < localPart.length; i++) 
+            {
+                if (!isAlphabetic(localPart[i]) && (localPart[i] < '0' || localPart[i] > '9')) 
+                {
+                        alert("Invalid email address: Local part must be alphanumeric");
+                        return false;
+                }
+            }
+
+            for (let i = 0; i < domainPart.length; i++) 
+            {
+                if (!isAlphabetic(domainPart[i])) 
+                {
+                        alert("Invalid email address: Domain part must be alphabetic");
+                        return false;
+                }
+            }
+
+            for (let i = 0; i < tldPart.length; i++) 
+            {
+                if (!isAlphabetic(tldPart[i])) 
+                {
+                    alert("Invalid email address: Top-level domain must be alphabetic");
+                        return false;
+                }
+            }
+            alert("Let's go!!!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form method="post" onsubmit="return validate()">
+        <label for="uname">Username: </label>
+        <input type="text" id="uname" name="uname">
+
+        <br><br>
+
+        <label for="add">Address: </label>
+        <div class="container">
+                <input type="text" id="add" name="add">
+        </div>
+
+        <br><br>
+
+        <label for="zip">ZIP no. </label>
+        <input type="text" id="zip" name="zip">
+
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" placeholder="example@gmail.com">
+    
+        <br><br>
+    
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
