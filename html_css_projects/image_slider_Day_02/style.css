@@ -1,50 +1,51 @@
 body {
     background-color: #000a1f;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Center the container vertically */
+    justify-content: center;        /* Center the container horizontally */
+    align-items: center;            /* Center the container vertically */
+    height: 100vh;                  /* Full viewport height */
 }
 
 .container {
     width: 70%;
     height: 450px;
     display: flex;
-    justify-content: center;
+    justify-content: center;        /* Center the images horizontally */
+    align-items: center;            /* Center the images vertically */
     gap: 10px;
 }
 
 .container img {
     width: 10%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;              /* Prevents the image from stretching */
     border-radius: 10px;
     border: 2px solid whitesmoke;
-    transition: width 0.5s ease; /* Use transform for smooth scaling */
+    transition: width 1s ease;      /* Use transform for smooth scaling by adding delay */
 }
 
 .container img:hover {
-    width: 20%;
+    width: 20%;                     /* Scale the image on hover */
 }
 
 /*
 
-Why Two display: flex are Used:
+    Why Two display: flex are Used:
 
-1. On body:
+    1. On body:
 
-    This flex display ensures the ".container" is centered both 
-    horizontally and vertically within the entire viewport.
+        This flex display ensures the ".container" is centered both 
+        horizontally and vertically within the entire viewport.
 
 
-2. On .container:
+    2. On .container:
 
-    This flex display ensures that the child img elements are 
-    arranged in a row, evenly spaced, and aligned properly.
+        This flex display ensures that the child img elements are 
+        arranged in a row, evenly spaced, and aligned properly.
 
-    Having two display: flex allows for separate alignment tasks: 
-        "one for the page-level layout (centering the container in 
-        the viewport)" and "one for the element-level layout  
-        (aligning images inside the container)".
+        Having two display: flex allows for separate alignment tasks: 
+            "one for the page-level layout (centering the container in 
+            the viewport)" and "one for the element-level layout  
+            (aligning images inside the container)".
 
 */
