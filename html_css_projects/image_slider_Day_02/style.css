@@ -4,6 +4,14 @@ body {
     justify-content: center;        /* Center the container horizontally */
     align-items: center;            /* Center the container vertically */
     height: 100vh;                  /* Full viewport height */
+
+    flex-direction: column;         /* Align items vertically */
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 5.5rem;
+    margin: -20px auto 20px auto;    /* Center the heading */
 }
 
 .container {
